@@ -8,14 +8,13 @@ let package = Package(
     platforms: [.iOS("13.0")],
     products: [
         // Products define the executables and libraries produced by a package, and make them visible to other packages.
-        .library(
-            name: "NFCPassportReader",
-            targets: ["NFCPassportReader"]),
+        .library(name: "NFCPassportReader", targets: ["NFCPassportReader"]),
+        .library(name: "OpenSSLLib", targets: ["OpenSSL"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
         // .package(url: /* package url */, from: "1.0.0"),
-//        .package(url: "https://github.com/krzyzanowskim/OpenSSL.git", .upToNextMinor(from: "1.1.1900"))
+        //.package(url: "https://github.com/krzyzanowskim/OpenSSL.git", .upToNextMinor(from: "1.1.1900"))
 
     ],
     targets: [
